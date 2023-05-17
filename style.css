@@ -1,0 +1,156 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .01fr 2.3fr .07fr .5fr .5fr .5fr;
+  grid-template-areas: 
+    "nav nav"
+    "main picture"
+    "benefits benefits"
+    "testimonio testimonio"
+    "CTA CTApicture"
+    "map address"
+    "footer footer";
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  background-color: aqua;
+  padding: .5em;
+  
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  vertical-align: text-bottom;
+  
+}
+
+nav > ul > li {
+  list-style-type: none;
+}
+
+button {
+  padding: .3em;
+  background-color:rgb(231, 241, 113);
+  border-radius: 5px;
+  border-width: 2px;
+  width:fit-content ;
+
+  
+}
+
+main {
+  grid-area: main;
+  background-color: #abf5fe;
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  padding-left: 5%;
+}
+
+main > h4 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  font-size: 3em;
+  line-height: 1em;
+  word-spacing: .2em;
+  
+}
+
+main > h5 {
+  margin-top: 10px;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.picture {
+  grid-area: picture;
+  background-image: url(assets/logoSanar.png);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #abf5fe;
+
+  
+  
+}
+
+.benefits {
+  grid-area: benefits;
+  display: grid;
+  gap: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "benefit1 benefit2 benefit3";
+}
+
+.benefit1 {
+  grid-area: benefit1;
+  flex: 0 1 auto;  
+}
+.benefit2 {
+  grid-area: benefit2;
+  flex: 0 1 auto;
+}
+.benefit3 {
+  grid-area: benefit3;
+  flex: 0 1 auto;
+}
+
+#benefitschild > h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+#benefitschild > p {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 400;
+} 
+
+.testimonials {
+  grid-area: testimonio;
+}
+
+.CTA {
+  grid-area: CTA;
+}
+
+.CTApicture {
+  grid-area: CTApicture;
+}
+
+.map {
+  grid-area: map;
+}
+
+.address {
+  grid-area: address;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+
+
+
+
