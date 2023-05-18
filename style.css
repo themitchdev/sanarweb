@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: 110%;
+  font-size: 130%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: .01fr .7fr .07fr 1fr 1fr .5fr .1fr;
