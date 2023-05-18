@@ -3,10 +3,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-size: 200%;
 }
 
 body {
-  font-size: 200%;
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: .01fr .7fr .07fr 1fr 1fr .5fr .1fr;
