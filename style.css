@@ -8,13 +8,13 @@
 body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .01fr 2.3fr .07fr 2fr .5fr .5fr;
+  grid-template-rows: .01fr .7fr .07fr 1fr 1fr .5fr .1fr;
   grid-template-areas: 
     "nav nav"
     "main picture"
     "benefits benefits"
     "testimonio testimonio"
-    "CTA CTApicture"
+    "CTA CTA"
     "map address"
     "footer footer";
 }
@@ -174,12 +174,11 @@ main > h5 {
   grid-area: testimonio;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: .4fr 1fr 1fr 1fr;
+  grid-template-rows: .2fr 1fr 1fr;
   grid-template-areas: 
     "title title title"
     "testi1 testi2 testi3"
-    "testi4 testi5 testi6"
-    "testi7 testi8 testi9";
+    "testi4 testi5 testi6";
 
 }
 
@@ -187,8 +186,7 @@ main > h5 {
   grid-area: title;
   text-align: center;
   padding: .5em;
-  background-color: #FFD265;
-  color: #0A7B83;
+  background-color: #abf5fe;
   font-family: 'Oswald', sans-serif;
   font-size: x-large;
 
@@ -196,49 +194,39 @@ main > h5 {
 
 #testi1 {
   grid-area: testi1;
-  background-color: #F19C65;
+  background-color: #abf5fe;
 }
 
 #testi2 {
   grid-area: testi2;
-  background-color: #a82a5c;
+  background-color: #abf5fe;
 }
 
 #testi3 {
   grid-area: testi3;
-  background-color: #9c65f1;
+  background-color: #abf5fe;
 }
 
 #testi4 {
   grid-area: testi4;
-  background-color: #0a3f83;
+  background-color: #abf5fe;
 }
 
 #testi5 {
   grid-area: testi5;
-  background-color: #2AA876;
+  background-color: #abf5fe;
 }
 
 #testi6 {
   grid-area: testi6;
-  background-color: #FFD265;
+  background-color: #abf5fe;
 }
-#testi7 {
-  grid-area: testi7;
-  background-color: #9c65f1;
-}
-#testi8 {
-  grid-area: testi8;
-  background-color: #F19C65;
-}
-#testi9 {
-  grid-area: testi9;
-  background-color: #0A7B83;
-}
+
 
 
 .CTA {
   grid-area: CTA;
+  background-color: #abf5fe;
 }
 
 .CTApicture {
@@ -247,14 +235,31 @@ main > h5 {
 
 .map {
   grid-area: map;
+  background-color: #2AA876;
+  color: white;
+  font-family: 'Source Serif Pro', serif;
+  font-size: xx-large;
+  text-align: left;
+  padding-left: .3em;
+  padding-top: 10%;
 }
+
+
 
 .address {
   grid-area: address;
+  background-image: url(assets/MapaSanarGoogle.png);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  
 }
 
-.footer {
+
+
+footer {
   grid-area: footer;
+  background-color:#0A7B83 ;
 }
 
 li:hover{
