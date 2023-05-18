@@ -8,7 +8,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .01fr 2.3fr .07fr .5fr .5fr .5fr;
+  grid-template-rows: .01fr 2.3fr .07fr 2fr .5fr .5fr;
   grid-template-areas: 
     "nav nav"
     "main picture"
@@ -24,8 +24,8 @@ nav {
   display: flex;
   flex-direction: row; 
   justify-content: space-between;
-  background-color: aqua;
-  padding: .5em;
+  background-color: #0A7B83;
+  padding: 0;
   
 }
 
@@ -35,19 +35,42 @@ nav > ul {
   gap: 15px;
   vertical-align: text-bottom;
   
+  
 }
 
 nav > ul > li {
   list-style-type: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: x-large;
+  color: white;
+  padding-bottom: .2em;
+  padding-right: .2em;
+  padding-left: .2em;
+}
+
+.logo {
+  padding-left: .3em;
+}
+
+.logo {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  color: white;
+  letter-spacing: .2em;
+  font-size: x-large;
 }
 
 button {
-  padding: .3em;
-  background-color:rgb(231, 241, 113);
+  transition: all .5s ease;
+  margin-top: 1em;
+  padding: .5em .5em;
+  background-color:#FFD265;
   border-radius: 5px;
   border-width: 2px;
-  width:fit-content ;
-
+  width:fit-content;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  letter-spacing: .2em;
   
 }
 
@@ -92,10 +115,6 @@ main > h5 {
 .benefits {
   grid-area: benefits;
   display: grid;
-  gap: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-top: 15px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 
@@ -105,29 +124,118 @@ main > h5 {
 .benefit1 {
   grid-area: benefit1;
   flex: 0 1 auto;  
+  background-color: #2AA876;
+  padding: 1em 1em 1em 1em;
 }
+
 .benefit2 {
   grid-area: benefit2;
   flex: 0 1 auto;
+  background-color: #0A7B83;
+  padding: 1em 1em 1em 1em;
 }
 .benefit3 {
   grid-area: benefit3;
   flex: 0 1 auto;
+  background-color:#F19C65;
+  padding: 1em 1em 1em 1em;
 }
 
 #benefitschild > h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
+  color: white;
+  
 }
 
 #benefitschild > p {
   font-family: 'Source Serif Pro', serif;
   font-weight: 400;
+  text-align: justify;
+  color: beige;
 } 
 
+.benefit1 > img {
+  float: left;
+  width: 3em;
+  margin-right: 1em;
+}
+.benefit2 > img {
+  float: left;
+  width: 3em;
+  margin-right: 1em;
+}
+.benefit3 > img {
+  float: left;
+  width: 3em;
+  margin-right: 1em;
+}
 .testimonials {
   grid-area: testimonio;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .4fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    "title title title"
+    "testi1 testi2 testi3"
+    "testi4 testi5 testi6"
+    "testi7 testi8 testi9";
+
 }
+
+#testimonio-title {
+  grid-area: title;
+  text-align: center;
+  padding: .5em;
+  background-color: #FFD265;
+  color: #0A7B83;
+  font-family: 'Oswald', sans-serif;
+  font-size: x-large;
+
+}
+
+#testi1 {
+  grid-area: testi1;
+  background-color: #F19C65;
+}
+
+#testi2 {
+  grid-area: testi2;
+  background-color: #a82a5c;
+}
+
+#testi3 {
+  grid-area: testi3;
+  background-color: #9c65f1;
+}
+
+#testi4 {
+  grid-area: testi4;
+  background-color: #0a3f83;
+}
+
+#testi5 {
+  grid-area: testi5;
+  background-color: #2AA876;
+}
+
+#testi6 {
+  grid-area: testi6;
+  background-color: #FFD265;
+}
+#testi7 {
+  grid-area: testi7;
+  background-color: #9c65f1;
+}
+#testi8 {
+  grid-area: testi8;
+  background-color: #F19C65;
+}
+#testi9 {
+  grid-area: testi9;
+  background-color: #0A7B83;
+}
+
 
 .CTA {
   grid-area: CTA;
@@ -149,7 +257,15 @@ main > h5 {
   grid-area: footer;
 }
 
+li:hover{
+  background-color: #2AA876;
+  
+    
+}
 
+button:hover {
+  padding: 1em 1em;
+}
 
 
 
